@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    let regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+    let regexp = /^[0-9]{5}-[0-9]{4}$/;
     function is_uszipcode(str) {
-        regexp =/^[0-9]{5}(?:-[0-9]{4})?$/;
+        regexp =/^[0-9]{5}-[0-9]{4}$/;
         if (regexp.test(str)) return true;
         return false;
     }
-    console.log(is_uszipcode("03201 - 2150"));
+    console.log(is_uszipcode("03201-2150"));
     console.log(is_uszipcode("7892"));
 </script>
 </body>
